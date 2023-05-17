@@ -73,3 +73,15 @@
   font-family: "brandon-grotesque", sans-serif;
   color: rgb(80, 65, 57);
 }
+
+
+
+
+.subsite-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}

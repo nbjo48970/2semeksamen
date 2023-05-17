@@ -341,8 +341,9 @@ h3 {
   flex-direction: column;
   border:  1px solid #565966;
   border-radius: 4px;
-  width: 40vw;
-  height: 35vw;
+  /* width: 40vw;
+  height: 35vw; */
+  width: 37%;
   margin: auto;
   padding: 20px;
   margin-top: 100px; /*skal slettes*/

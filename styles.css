@@ -154,17 +154,25 @@ h3 {
 }
 
 .main-flex-container-footsies {
+  padding: 3rem 5rem 3rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 5rem;
   background-color: #383838;
+  text-decoration: none;
+  color: #E5E5E5;
+}
+
+.main-flew-container-footsies a {
+  text-decoration: none;
+  color: #E5E5E5;
 }
 
 .flex-container-top {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 5rem;
 
 
@@ -199,6 +207,10 @@ h3 {
   margin-top: 5rem;
 }
 
+.footlocker-nav a {
+  text-decoration: none;
+  color: #E5E5E5;
+
 
 #contact-form{
   display: flex;
@@ -214,4 +226,5 @@ h3 {
 
 #contact-form textarea{
   border: 0.5px solid #565966;
+
 }

@@ -30,8 +30,9 @@ body {
 /* Primary-nav-bar */
 
 .primary-header {
-  padding: 1rem;
+  padding: 1.5rem 6rem 1.5rem 6rem;
   background: var(--clr-white);
+  background: linear-gradient(rgba(74, 88, 83, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
   position: sticky;
   top: 0;
 }
@@ -39,30 +40,66 @@ body {
 .primary-header-inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .primary-header a {
   color: var(--clr-black);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: 500ms;
 }
 
-.primary-header a:hover,
-.primary-header a:focus {
-  opacity: 0.7;
+.nav-list a:hover,
+.nav-list a:focus {
+  opacity: 0.5;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
 }
 
 .nav-list li {
-  margin-left: 3rem;
+  margin-left: 1.5rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .nav-list li {
+    margin-left: 3rem;
+  }
+}
 
+@media screen and (min-width: 1400px) {
+  .nav-list li {
+    margin-left: 5rem;
+  }
+}
+
+.nav-list li:last-child a {
+  background-color: var(--clr-blue);
+  padding: 8px 10px;
+  border-radius: 100vh;
+  color: var(--clr-white);
+  border: solid 2px var(--clr-blue);
+}
+
+.nav-list li:last-child a:hover,
+.nav-list li:last-child a:focus {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  border: solid 2px var(--clr-blue);
+  opacity: 1;
+}
+
+.logo img {
+  width: 300px;
+}
 
 /*HR-HTML*/
 
@@ -232,9 +269,7 @@ h3 {
 .flex-container-top {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 5rem;
-
+  justify-content: space-between;
 
 }
 
@@ -264,13 +299,19 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .footlocker-nav a {
   text-decoration: none;
   color: #E5E5E5;
 
+}
+
+.footer-image {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
 
 #contact-form{
   display: flex;

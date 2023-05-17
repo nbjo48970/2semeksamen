@@ -5,7 +5,7 @@
     --clr-yellow: #fbe355;
     --clr-blue: #00454e;
     --clr-darkBlue: #003037;
-    --clr-black: #171717;
+    --clr-black: #292b33;
     --clr-white: #f6f6f6;
     --clr-greyBlue: #336A71;
     --clr-midBlue: #b5d3d7;
@@ -21,6 +21,49 @@
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Primary-nav-bar */
+
+.primary-header {
+  padding: 1rem;
+  background: var(--clr-white);
+  position: sticky;
+  top: 0;
+}
+
+.primary-header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-header a {
+  color: var(--clr-black);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primary-header a:hover,
+.primary-header a:focus {
+  opacity: 0.7;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list li {
+  margin-left: 3rem;
+}
+
+.logo {
+  background-image: ;
 }
 
 /*HR-HTML*/

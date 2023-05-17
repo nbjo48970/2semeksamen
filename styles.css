@@ -1,26 +1,26 @@
 :root {
-    --clr-pink: #f1c9c0;
-    --clr-lightBlue: #e4f1f0;
-    --clr-darkLightBlue: #c8e2df;
-    --clr-yellow: #fbe355;
-    --clr-blue: #00454e;
-    --clr-darkBlue: #003037;
-    --clr-black: #292b33;
-    --clr-white: #f6f6f6;
-    --clr-greyBlue: #336A71;
-    --clr-midBlue: #b5d3d7;
-    --clr-lightTurquoise: #D4E8E6;
+  --clr-pink: #f1c9c0;
+  --clr-lightBlue: #e4f1f0;
+  --clr-darkLightBlue: #c8e2df;
+  --clr-yellow: #fbe355;
+  --clr-blue: #00454e;
+  --clr-darkBlue: #003037;
+  --clr-black: #292b33;
+  --clr-white: #f6f6f6;
+  --clr-greyBlue: #336A71;
+  --clr-midBlue: #b5d3d7;
+  --clr-lightTurquoise: #D4E8E6;
 
-    --ff-primary: 'Montserrat', sans-serif;
+  --ff-primary: 'Montserrat', sans-serif;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 body {
@@ -62,22 +62,37 @@ body {
   margin-left: 3rem;
 }
 
-.logo {
-  background-image: ;
-}
+
 
 /*HR-HTML*/
 
-.subsite-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    margin-bottom: 50px;  
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  height: 40px;
+  line-height: 40px;
 }
 
-.container{
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 15px;
+  line-height: 17px;
+  margin-bottom: 15px;
+}
+
+.subsite-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -89,7 +104,7 @@ body {
   padding-bottom: 30px;
 }
 
-.inspiration{
+.inspiration {
   background-color: #fffef8;
   color: rgb(80, 65, 57);
   font-family: "canada-type-gibson", sans-serif;
@@ -98,11 +113,11 @@ body {
   text-align: center;
 }
 
-.inspiration img{
+.inspiration img {
   height: 210px;
 }
 
-.inspiration p{
+.inspiration p {
   text-align: center;
   font-size: 12px;
   font-family: "brandon-grotesque", sans-serif;
@@ -110,14 +125,14 @@ body {
   color: rgb(80, 65, 57);
 }
 
-#inspi p{
+#inspi p {
   text-align: center;
   font-size: 16px;
   font-family: "brandon-grotesque", sans-serif;
   color: rgb(80, 65, 57);
 }
 
-#inspi2 p{
+#inspi2 p {
   text-align: center;
   font-size: 16px;
   font-family: "brandon-grotesque", sans-serif;
@@ -125,18 +140,18 @@ body {
 }
 
 .contact-button {
-    display: flex;
-    justify-content: center;
-    width: 150px;
-    border-radius: 50px;
-    background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  border-radius: 50px;
+  background-color: lightblue;
 }
 
 .contact-button a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .main-flex-container-footsies {
@@ -149,21 +164,37 @@ body {
 .flex-container-top {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 5rem;
+
 
 }
 
-  .mailerman {
-    box-sizing: border-box;
-  }
+.mailerman {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  .location {
-    box-sizing: border-box;
+}
 
-  }
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  .numeral {
-    box-sizing:
+}
 
-  }
+.numeral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+}
+
+.flex-container-bot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+}

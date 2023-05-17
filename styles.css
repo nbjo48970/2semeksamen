@@ -67,7 +67,6 @@ body {
 /*HR-HTML*/
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
   height: 40px;
@@ -76,7 +75,6 @@ h2 {
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 500;
   height: 15px;
@@ -198,4 +196,12 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 5rem;
+}
+
+
+#contact-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

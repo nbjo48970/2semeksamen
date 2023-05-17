@@ -23,12 +23,16 @@
     list-style: none;
 }
 
+/*HR-HTML*/
 
-
-
-
-
-
+.subsite-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;  
+}
 
 .container{
   margin-left: auto;
@@ -36,7 +40,6 @@
   width: 90%;
   max-width: 70.5rem;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   column-gap: 1.4rem;
@@ -78,14 +81,17 @@
   color: rgb(80, 65, 57);
 }
 
+.contact-button {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    border-radius: 50px;
+    background-color: lightblue;
+}
 
-
-
-.subsite-title{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
+.contact-button a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }

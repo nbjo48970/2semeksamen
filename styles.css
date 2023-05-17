@@ -1,3 +1,26 @@
-body{
-  
+:root {
+    --clr-pink: #f1c9c0;
+    --clr-lightBlue: #e4f1f0;
+    --clr-darkLightBlue: #c8e2df;
+    --clr-yellow: #fbe355;
+    --clr-blue: #00454e;
+    --clr-darkBlue: #003037;
+    --clr-black: #171717;
+    --clr-white: #f6f6f6;
+    --clr-greyBlue: #336A71;
+    --clr-midBlue: #b5d3d7;
+    --clr-lightTurquoise: #D4E8E6;
+
+    --ff-primary: 'proxima-nova', sans-serif;
+    --ff-logo: 'Arvo', serif;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

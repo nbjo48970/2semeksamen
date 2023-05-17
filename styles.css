@@ -11,9 +11,7 @@
     --clr-midBlue: #b5d3d7;
     --clr-lightTurquoise: #D4E8E6;
 
-    --ff-primary: 'proxima-nova', sans-serif;
-    --ff-logo: 'Arvo', serif;
-
+    --ff-primary: 'Montserrat', sans-serif;
 }
 
 *,
@@ -25,9 +23,11 @@
     list-style: none;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
+
+
+
+
+
 
 
 .container{

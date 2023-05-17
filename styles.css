@@ -121,21 +121,37 @@ h3{
 .flex-container-top {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 5rem;
+
 
 }
 
   .mailerman {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
   }
 
   .location {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
   }
 
   .numeral {
-    box-sizing:
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
+
+  }
+
+  .flex-container-bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
   }

@@ -50,6 +50,8 @@ body {
   white-space: nowrap;
   text-transform: uppercase;
   transition: 500ms;
+  display: inline-block;
+  width: 100%;
 }
 
 .nav-list a:hover,
@@ -67,6 +69,7 @@ body {
 
 .nav-list li {
   margin-left: 1.5rem;
+  flex-basis: 100%;
 }
 
 @media screen and (min-width: 1000px) {

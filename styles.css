@@ -25,6 +25,10 @@
     list-style: none;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 .container{
   margin-left: auto;

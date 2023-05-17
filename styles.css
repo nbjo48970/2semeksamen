@@ -89,3 +89,9 @@
   margin-top: 70px;
   margin-bottom: 50px;
 }
+
+.flex-container-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;

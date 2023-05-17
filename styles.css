@@ -1,29 +1,72 @@
 :root {
-    --clr-pink: #f1c9c0;
-    --clr-lightBlue: #e4f1f0;
-    --clr-darkLightBlue: #c8e2df;
-    --clr-yellow: #fbe355;
-    --clr-blue: #00454e;
-    --clr-darkBlue: #003037;
-    --clr-black: #171717;
-    --clr-white: #f6f6f6;
-    --clr-greyBlue: #336A71;
-    --clr-midBlue: #b5d3d7;
-    --clr-lightTurquoise: #D4E8E6;
+  --clr-pink: #f1c9c0;
+  --clr-lightBlue: #e4f1f0;
+  --clr-darkLightBlue: #c8e2df;
+  --clr-yellow: #fbe355;
+  --clr-blue: #00454e;
+  --clr-darkBlue: #003037;
+  --clr-black: #292b33;
+  --clr-white: #f6f6f6;
+  --clr-greyBlue: #336A71;
+  --clr-midBlue: #b5d3d7;
+  --clr-lightTurquoise: #D4E8E6;
 
-    --ff-primary: 'Montserrat', sans-serif;
+  --ff-primary: 'Montserrat', sans-serif;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-h2{
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Primary-nav-bar */
+
+.primary-header {
+  padding: 1rem;
+  background: var(--clr-white);
+  position: sticky;
+  top: 0;
+}
+
+.primary-header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-header a {
+  color: var(--clr-black);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primary-header a:hover,
+.primary-header a:focus {
+  opacity: 0.7;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list li {
+  margin-left: 3rem;
+}
+
+
+
+/*HR-HTML*/
+
+h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -32,7 +75,7 @@ h2{
   color: #565966;
 }
 
-h3{
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -41,16 +84,16 @@ h3{
   margin-bottom: 15px;
 }
 
-.subsite-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
+.subsite-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
-.container{
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -62,7 +105,7 @@ h3{
   padding-bottom: 30px;
 }
 
-.inspiration{
+.inspiration {
   background-color: #fffef8;
   color: rgb(80, 65, 57);
   font-family: "canada-type-gibson", sans-serif;
@@ -71,11 +114,11 @@ h3{
   text-align: center;
 }
 
-.inspiration img{
+.inspiration img {
   height: 210px;
 }
 
-.inspiration p{
+.inspiration p {
   text-align: center;
   font-size: 12px;
   font-family: "brandon-grotesque", sans-serif;
@@ -83,14 +126,14 @@ h3{
   color: rgb(80, 65, 57);
 }
 
-#inspi p{
+#inspi p {
   text-align: center;
   font-size: 16px;
   font-family: "brandon-grotesque", sans-serif;
   color: rgb(80, 65, 57);
 }
 
-#inspi2 p{
+#inspi2 p {
   text-align: center;
   font-size: 16px;
   font-family: "brandon-grotesque", sans-serif;
@@ -98,18 +141,18 @@ h3{
 }
 
 .contact-button {
-    display: flex;
-    justify-content: center;
-    width: 150px;
-    border-radius: 50px;
-    background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  border-radius: 50px;
+  background-color: lightblue;
 }
 
 .contact-button a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .main-flex-container-footsies {
@@ -128,31 +171,31 @@ h3{
 
 }
 
-  .mailerman {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.mailerman {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  }
+}
 
-  .location {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  }
+}
 
-  .numeral {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.numeral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
 
-  }
+}
 
-  .flex-container-bot {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5rem;
-  }
+.flex-container-bot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+}

@@ -11,9 +11,7 @@
     --clr-midBlue: #b5d3d7;
     --clr-lightTurquoise: #D4E8E6;
 
-    --ff-primary: 'proxima-nova', sans-serif;
-    --ff-logo: 'Arvo', serif;
-
+    --ff-primary: 'Montserrat', sans-serif;
 }
 
 *,
@@ -25,8 +23,15 @@
     list-style: none;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+/*HR-HTML*/
+
+.subsite-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;  
 }
 
 .container{
@@ -35,7 +40,6 @@ body {
   width: 90%;
   max-width: 70.5rem;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   column-gap: 1.4rem;
@@ -75,4 +79,26 @@ body {
   font-size: 16px;
   font-family: "brandon-grotesque", sans-serif;
   color: rgb(80, 65, 57);
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    border-radius: 50px;
+    background-color: lightblue;
+}
+
+.contact-button a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.flex-container-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
 }

@@ -417,3 +417,30 @@ h3 {
   margin-bottom: 40px;
   margin-left: 45px;
 }
+
+input[type="checkbox"]{
+  appearance: none;
+   margin: 0;
+   font: inherit;
+   width: 18px;
+   height: 18px;
+   border: 1px solid #565966;
+   border-radius: 4px;
+   transform: translateY(-0.075em);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ input[type="checkbox"]::before {
+   content: "";
+   width: 12px;
+   height: 12px;
+   transform: scale(0);
+   box-shadow: inset 16px 16px #E85C54;
+   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+ }
+
+ input[type="checkbox"]:checked::before {
+   transform: scale(1);
+ }

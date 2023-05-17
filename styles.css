@@ -305,7 +305,7 @@ h3 {
 }
 
 .lines-of-code {
-  height: 0.5rem;
+  height: 0.31rem;
 }
 
 .flex-container-bot {
@@ -325,6 +325,10 @@ h3 {
   height: 1.5rem;
   padding-right: 1rem;
   position: relative;
+}
+
+.socials-footlocker {
+  padding-right: 7rem;
 }
 
 #contact-form{

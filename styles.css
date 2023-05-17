@@ -129,13 +129,14 @@ h3 {
 }
 
 .container {
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 90%; */
+  margin: auto;
   max-width: 70.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 1.4rem;
   padding-bottom: 30px;
 }
@@ -223,6 +224,7 @@ h3 {
     justify-content: left;
     font-size: 100px;
     margin-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .quote-text {
@@ -239,6 +241,7 @@ h3 {
     justify-content: right;
     font-size: 100px;
     margin-right: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 

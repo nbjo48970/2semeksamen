@@ -285,6 +285,7 @@ body {
   transition: 500ms;
   text-align: left;
   z-index: 90;
+  margin: 0;
 }
 
 .hero-container h2>span {

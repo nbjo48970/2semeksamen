@@ -394,7 +394,7 @@ h2 {
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 40px;
-  color: #565966;
+  color: var(--clr-black);
   text-align: center;
   margin: 0 1rem;
   transition: 500ms;
@@ -476,7 +476,6 @@ h3 {
 @media screen and (min-width: 1300px) {
   .humanResources-container {
     flex-basis: 30%;
-    
   }
 }
 
@@ -723,23 +722,30 @@ h3 {
   padding-right: 7rem;
 }
 
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: auto;
+}
+
 #contact-form {
+  grid-column: 2/3;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #565966;
+  border: 1px solid var(--clr-black);
+  background-color: #fffdfd;
   border-radius: 4px;
-  width: 37%;
-  margin: auto;
-  padding: 20px;
+  padding: 40px 30px;
   margin-top: 100px;
   /*skal slettes*/
 }
 
 #contact-form textarea {
-  border: 1px solid #565966;
-  width: 86%;
+  border: 1px solid var(--clr-black);
+  background-color: #fffdfd;
+  width: 100%;
   height: 100px;
   padding: 5px;
   resize: none;
@@ -747,37 +753,51 @@ h3 {
   margin: 20px;
   margin-top: 40px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.938rem;
+  font-size: 0.8rem;
+  transition: 500ms;  
 }
 
 #contact-header {
   align-self: flex-start;
-  margin: 40px;
+  margin: 20px 0px;
+  font-size: 1.5rem;
 }
 
 .input-row {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .input-row input {
   border: none;
-  border-bottom: 1px solid #565966;
-  width: 40%;
+  border-bottom: 1px solid var(--clr-black);
+  background-color: #fffdfd;
+  width: 100%;
   height: 40px;
   margin: 20px;
   padding-left: 5px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.938rem;
+  font-size: 0.8rem;
+  flex-basis: auto;
+  transition: 500ms;
 }
 
 #check {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  margin: 45px;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#check p {
+  font-size: 0.8rem;
+  transition: 500ms;
 }
 
 #contact-form-button {
@@ -793,8 +813,8 @@ h3 {
   border: none;
   border-radius: 50px;
   background-color: #E85C54;
-  margin-bottom: 40px;
-  margin-left: 45px;
+  margin: 10px 20px 30px 0px;
+  cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -803,7 +823,7 @@ input[type="checkbox"] {
   font: inherit;
   width: 18px;
   height: 18px;
-  border: 1px solid #565966;
+  border: 1px solid var(--clr-black);
   border-radius: 4px;
   transform: translateY(-0.075em);
   display: flex;
@@ -822,4 +842,68 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
+}
+
+@media screen and (min-width: 680px) {
+  .input-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .input-row input {
+    flex-basis: 41%;
+    font-size: 0.938rem;
+  }
+
+  #contact-form {
+    padding: 40px 20px;
+    }
+
+  #contact-header {
+    margin: 20px 20px;
+    font-size: 1.875rem;
+    }
+
+  #check {
+    margin: 20px;
+  }
+
+  #contact-form-button {
+    margin: 10px 20px 30px 20px;
+  }
+
+  #contact-form textarea {
+    font-size: 0.938rem;
+  }
+
+  #check p {
+    font-size: 1rem
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #contact {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #contact {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #contact {
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+}
+
+@media screen and (max-width: 284px) {
+  #contact {
+    grid-template-columns: 1fr 12fr 1fr;
+  }
+  #contact-form {
+    padding: 40px 15px;
+  }
 }

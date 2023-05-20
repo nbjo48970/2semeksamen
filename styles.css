@@ -29,6 +29,7 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+  background-color: var(--clr-white);
 }
 
 /* Primary-nav-bar */
@@ -40,6 +41,7 @@ body {
   position: sticky;
   top: 0;
   transition: 500ms;
+  z-index: 100;
 }
 
 .primary-header-inner {
@@ -178,8 +180,9 @@ body {
   min-height: 100vh;
   display: block;
   background-color: var(--clr-white);
-  padding-top: 140px;
-  z-index: -1;
+  padding-top: 40px;
+  margin-top: 100px;
+  z-index: 100;
   transition: 600ms cubic-bezier(.45, .26, .18, 1);
 }
 
@@ -226,7 +229,7 @@ body {
   height: 100vh;
   background-position: center center;
   overflow: hidden;
-  z-index: -90;
+  /* z-index: -90; */
 }
 
 .heroA {
@@ -241,9 +244,9 @@ body {
   background-image: url(img/tall-trees-forest-mountains-covered-with-fog.jpg);
 }
 
-/* .heroSlides {
+.heroSlides {
   display: none;
-} */
+}
 
 .hero-mask {
   position: absolute;
@@ -257,7 +260,7 @@ body {
   width: 100vw;
   background-position: center center;
   overflow: hidden;
-  z-index: -89;
+  /* z-index: -89; */
 }
 
 .hero-container h1 {
@@ -268,6 +271,8 @@ body {
   z-index: -80;
   transition: 500ms;
   opacity: 0.7;
+  text-align: left;
+  z-index: 90;
 }
 
 .hero-container h2 {
@@ -278,6 +283,8 @@ body {
   line-height: 2.18rem;
   z-index: -80;
   transition: 500ms;
+  text-align: left;
+  z-index: 90;
 }
 
 .hero-container h2>span {
@@ -370,6 +377,16 @@ body {
   }
 }
 
+/* Rec */
+
+/* .recruitment-container {
+  
+} */
+
+.recruitment-container img {
+  width: 100vw;
+}
+
 /*HR-HTML*/
 
 h2 {
@@ -378,6 +395,7 @@ h2 {
   height: 40px;
   line-height: 40px;
   color: #565966;
+  text-align: center;
 }
 
 h3 {
@@ -386,6 +404,7 @@ h3 {
   height: 15px;
   line-height: 17px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .subsite-title {
@@ -393,8 +412,14 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin: 70px 0px 100px 0px;
+  transition: 500ms;
+}
+
+@media screen and (min-width: 680px) {
+  .subsite-title {
+    margin: 70px 0px 30px 0px;
+  }
 }
 
 .container {
@@ -411,9 +436,7 @@ h3 {
 }
 
 .inspiration {
-  background-color: #fffef8;
   color: rgb(80, 65, 57);
-  font-family: "canada-type-gibson", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -426,7 +449,6 @@ h3 {
 .inspiration p {
   text-align: center;
   font-size: 12px;
-  font-family: "brandon-grotesque", sans-serif;
   padding-bottom: 10px;
   color: rgb(80, 65, 57);
 }
@@ -434,7 +456,6 @@ h3 {
 #inspi p {
   text-align: center;
   font-size: 16px;
-  font-family: "brandon-grotesque", sans-serif;
   color: rgb(80, 65, 57);
 }
 
@@ -493,35 +514,34 @@ h3 {
 }
 
 .quote-p {
-    background-color: #435A70;
-    padding: 20px 250px;
+  background-color: #435A70;
+  padding: 20px 0px;
 }
 
 .qmark-left {
-    display: flex;
-    justify-content: left;
-    font-size: 100px;
-    margin-left: 150px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 80px;
+  display: flex;
+  justify-content: left;
+  font-size: 100px;
+  height: 80px;
+  margin-left: 25%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .quote-text {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0px 240px;
-    font-size: 20px;
-    font-style: italic;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
 }
 
 .qmark-right {
-    display: flex;
-    justify-content: right;
-    font-size: 100px;
-    margin-right: 150px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 80px;
+  display: flex;
+  justify-content: right;
+  font-size: 100px;
+  height: 80px;
+  margin-right: 25%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 

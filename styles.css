@@ -695,6 +695,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 }
 
 .house-of-lines {
@@ -755,8 +756,7 @@ h3 {
   z-index: 1;
   border-radius: 4px;
   padding: 40px 30px;
-  margin-top: 100px;
-  /*skal slettes*/
+  margin: 100px 0;
 }
 
 #contact-form textarea {
@@ -868,6 +868,25 @@ input[type="checkbox"]:checked::before {
   left: 0;
   right: 0;
   background-color: var(--clr-blue)
+}
+
+.contactInfo-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactIcon {
+  height: 2rem;
+  padding-right: 1rem;
 }
 
 @media screen and (min-width: 680px) {

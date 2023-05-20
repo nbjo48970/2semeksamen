@@ -424,6 +424,7 @@ h3 {
   display: grid;
   grid-template-columns: 0.5rem 1fr 0.5rem;
   grid-template-rows: auto;
+  transition: 500ms;
 }
 
 .humanResources-section {
@@ -456,9 +457,9 @@ h3 {
   transition: 500ms;
 }
 
-@media screen and (min-width: 969px) {
+@media screen and (min-width: 800px) {
   .humanResources-grid {
-    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-columns: 3rem 1fr 3rem;
   }
 
   .humanResources-container {
@@ -466,9 +467,16 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .humanResources-grid {
+    grid-template-columns: 10rem 1fr 10rem;
+  }
+}
+
 @media screen and (min-width: 1300px) {
   .humanResources-container {
     flex-basis: 30%;
+    
   }
 }
 

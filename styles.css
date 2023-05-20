@@ -585,7 +585,7 @@ h3 {
 }
 
 .main-flex-container-footsies {
-  padding: 3rem 5rem 3rem 5rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -593,6 +593,7 @@ h3 {
   background-color: #383838;
   text-decoration: none;
   color: #E5E5E5;
+  gap: 1rem;
 }
 
 .main-flew-container-footsies a {
@@ -664,7 +665,8 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  font-size: 0.9rem;
+  flex-wrap: wrap;
 }
 
 .topbois {
@@ -695,6 +697,12 @@ h3 {
   justify-content: center;
 }
 
+.house-of-lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lines-of-code {
   height: 0.31rem;
 }
@@ -703,7 +711,8 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .footlocker-nav a {
@@ -719,8 +728,15 @@ h3 {
 }
 
 .socials-footlocker {
-  padding-right: 7rem;
+  padding-right: 10rem;
 }
+
+.copyright {
+  font-size: 0.7rem;
+}
+
+
+
 
 #contact {
   display: grid;
@@ -734,8 +750,9 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid var(--clr-black);
+  border: 2px solid var(--clr-blue);
   background-color: #fffdfd;
+  z-index: 1;
   border-radius: 4px;
   padding: 40px 30px;
   margin-top: 100px;
@@ -811,7 +828,7 @@ h3 {
   align-self: flex-start;
   width: 150px;
   border: none;
-  border-radius: 50px;
+  border-radius: 100vh;
   background-color: #E85C54;
   margin: 10px 20px 30px 0px;
   cursor: pointer;
@@ -842,6 +859,15 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
+}
+
+.contactBG {
+  position: absolute;
+  height: 200px;
+  top: 400px;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-blue)
 }
 
 @media screen and (min-width: 680px) {

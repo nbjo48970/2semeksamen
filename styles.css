@@ -41,7 +41,7 @@ body {
   position: sticky;
   top: 0;
   transition: 500ms;
-  z-index: 100;
+  z-index: 200;
 }
 
 .primary-header-inner {
@@ -180,8 +180,8 @@ body {
   min-height: 100vh;
   display: block;
   background-color: var(--clr-white);
-  padding-top: 40px;
-  margin-top: 100px;
+  padding-top: 140px;
+  /* margin-top: 100px; */
   z-index: 100;
   transition: 600ms cubic-bezier(.45, .26, .18, 1);
 }
@@ -406,11 +406,62 @@ body {
 /* Rec */
 
 /* .recruitment-container {
-  
+  background-image: url(img/journeymapline.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1773px;
+  padding-bottom: 0;
 } */
 
-.recruitment-container img {
-  width: 100vw;
+.recruitment-container {
+  background-image: url(img/journeymaplinesmollest.png);
+  display: block;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-bottom: 540%;
+  background-size: 100%;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 420px) {
+  .recruitment-container {
+    background-image: url(img/journeymaplinesmoll.png);
+    padding-bottom: 320%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .recruitment-container {
+    background-image: url(img/journeymaplinee.png);
+    padding-bottom: 220%;
+  }
+}
+
+@media screen and (min-width: 817px) {
+  .recruitment-container {
+    background-image: url(img/journeymapthin.png);
+    background-size: cover;
+    height: 2079px;
+    padding-bottom: 0;
+    margin-top: -80px;
+  }
+}
+
+@media screen and (min-width: 1173px) {
+  .recruitment-container {
+    background-image: url(img/journeymapmid.png);
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .recruitment-container {
+    background-image: url(img/journeymapwide2.png);
+  }
 }
 
 /*HR-HTML*/

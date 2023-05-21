@@ -211,6 +211,23 @@ body {
   color: var(--clr-white);
 }
 
+
+/* .spacer {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.layer1 {
+  background-image: url(img/svgmask2.svg);
+} */
+
+
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 5fr 5fr;

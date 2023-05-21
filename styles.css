@@ -93,15 +93,34 @@ body {
   opacity: 1;
 }
 
-.logo img {
-  width: 200px;
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 1.5rem;
-  margin-top: 5px;
-  transition: 500ms;
 }
 
-.logo img:hover {
-  opacity: 0.6;
+.logo img {
+  width: 52px;
+  margin-top: 5px;
+  transition: 1000ms;
+  color: #66379b;
+}
+
+.logo img:first-child {
+  padding-bottom: 2px;
+}
+
+.logo img:last-child {
+  width: 165px;
+}
+
+.logo a:hover .spin {
+  transform: rotate(240deg);
+}
+
+.logo a:hover :last-child {
+  transform: translateX(8px);
 }
 
 .nav-list li {
@@ -345,8 +364,12 @@ body {
 
 @media screen and (min-width: 1000px) {
   .logo img {
-    width: 260px;
-    margin-right: 5rem;
+    width: 57px;
+    margin-top: 5px;
+  }
+
+  .logo img:last-child {
+    width: 201px;
   }
 
   .primary-header {
@@ -375,10 +398,14 @@ body {
   }
 }
 
-@media screen and (max-width: 284px) {
+@media screen and (max-width: 300px) {
   .logo img {
-    width: 165px;
-    margin-right: 0.5rem;
+    width: 42px;
+    margin-top: 5px;
+  }
+
+  .logo img:last-child {
+    width: 120px;
   }
 
   .hamburger {
@@ -397,13 +424,14 @@ body {
   .hero-container h1 {
     font-size: 0.7rem;
   }
+
   .hero-container h2 {
     font-size: 1.45rem;
     line-height: 1.6rem;
   }
 }
 
-/* Rec */
+/* ---------------------- Recruitment ------------------------- */
 
 /* .recruitment-container {
   background-image: url(img/journeymapline.png);
@@ -415,7 +443,7 @@ body {
 } */
 
 .recruitment-container {
-  background-image: url(img/journeymaplinesmollest.png);
+  background-image: url(img/journeymaplinesmollestNeww.png);
   display: block;
   position: relative;
   background-position: center center;
@@ -430,21 +458,21 @@ body {
 
 @media screen and (min-width: 420px) {
   .recruitment-container {
-    background-image: url(img/journeymaplinesmoll.png);
+    background-image: url(img/journeymaplinesmolNeww.png);
     padding-bottom: 320%;
   }
 }
 
 @media screen and (min-width: 600px) {
   .recruitment-container {
-    background-image: url(img/journeymaplinee.png);
+    background-image: url(img/journeymaplineNeww.png);
     padding-bottom: 220%;
   }
 }
 
 @media screen and (min-width: 817px) {
   .recruitment-container {
-    background-image: url(img/journeymapthin.png);
+    background-image: url(img/journeymapthinneww.png);
     background-size: cover;
     height: 2079px;
     padding-bottom: 0;
@@ -454,13 +482,13 @@ body {
 
 @media screen and (min-width: 1173px) {
   .recruitment-container {
-    background-image: url(img/journeymapmid.png);
+    background-image: url(img/journeymapmidNewww.png);
   }
 }
 
 @media screen and (min-width: 1480px) {
   .recruitment-container {
-    background-image: url(img/journeymapwide2.png);
+    background-image: url(img/journeymapwidest.png);
   }
 }
 
@@ -533,6 +561,12 @@ h3 {
   transition: 500ms;
 }
 
+.humanResources-container h3 {
+  font-weight: 600;
+  color: var(--clr-blue);
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 696px) {
   .humanResources-container {
     flex-basis: 34%;
@@ -570,6 +604,7 @@ h3 {
     font-size: 1.6rem;
   }
 
+  .humanResources-container h3,
   h3 {
     font-size: 0.75rem;
   }
@@ -833,18 +868,18 @@ h3 {
   position: relative;
 }
 
-.socials-footlocker img{
+.socials-footlocker img {
   height: 44px;
   transition: 400ms;
 }
 
-.socials-footlocker img:hover{
+.socials-footlocker img:hover {
   scale: 0.85;
 }
 
 .socials-footlocker a i {
   color: var(--clr-white);
-  
+
 }
 
 .socials {
@@ -870,7 +905,8 @@ h3 {
   transition: 500ms;
 }
 
-.socials a i:hover, .socials a i:active {
+.socials a i:hover,
+.socials a i:active {
   transform: scale(1.25);
 }
 
@@ -951,7 +987,8 @@ h3 {
   margin: 10px 0px;
 }
 
-#check,#check label {
+#check,
+#check label {
   display: flex;
   flex-direction: row;
   align-self: flex-start;

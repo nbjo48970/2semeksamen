@@ -950,8 +950,21 @@ h3 {
 .copyright {
   font-size: 0.7rem;
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 0.8rem;
 }
 
+.language-switch i {
+  font-size: 1.05rem;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.language-switch i:hover {
+  scale: 1.3;
+}
 
 
 

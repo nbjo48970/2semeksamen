@@ -6,7 +6,6 @@ function ContactForm(input)
   let emailError = document.getElementById("email-error");
   let emailInput = document.getElementById("email-input");
 
-
 if (inArray(input.value)) {
   emailError.innerHTML = "Du har en tidligere henvendelse under behandling";
   emailError.style.color = "rgb(80, 65, 57)";

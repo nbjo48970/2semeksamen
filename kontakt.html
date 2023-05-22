@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <script src="mobile-nav.js" defer></script>
+  <script src="javascript/kontakt.js" defer></script>
+
   <title>Kontakt</title>
 </head>
 
@@ -49,10 +51,13 @@
     <div id="contact-form">
       <h2 id="contact-header">Kontakt</h2>
       <div class="input-row">
-        <input type="text" id="" name="navn" placeholder="Navn">
-        <input type="text" id="" name="virksomhed" placeholder="Virksomhed">
-        <input type="text" id="" name="email" placeholder="E-mail">
-        <input type="text" id="" name="telefon" placeholder="Telefon">
+        <form name="form1" action="#">
+        <input type="text" id="name-input" name="navn" placeholder="Navn">
+        <input type="text" id="virksomhed-input" name="virksomhed" placeholder="Virksomhed">
+        <span id="email-error"></span><br>
+        <input type="text" id="email-input" name="email" placeholder="E-mail">
+        <input type="text" id="telefon-input" name="telefon" placeholder="Telefon">
+        </form>
       </div>
       <div class="input-row">
         <textarea id="" name="besked" placeholder="Besked"></textarea>
@@ -63,7 +68,7 @@
           <p>Jeg accepterer Conversias privatlivspolitik</p>
         </label>
       </div>
-      <button id="contact-form-button" type="submit">Send</button>
+      <button id="contact-form-button" type="submit" onclick="return ContactForm(document.form1.email)">Send</button>
       <div class="contactInfo-container">
         <div class="contactInfo">
           <img class="contactIcon" src="img/footer-img/phone.png" alt="Telefon Ikon">
@@ -75,7 +80,7 @@
         </div>
       </div>
     </div>
-    
+
   </form>
   <footer>
     <div class="main-flex-container-footsies">

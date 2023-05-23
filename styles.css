@@ -4,6 +4,7 @@
   --clr-turquoise: #994d14;
   --clr-yellow: #B0801A;
   --clr-orange: #b75814;
+  --clr-orange2: #c57a44;
   --clr-purple: #66379b;
   --clr-blue: #195B63;
   --clr-darkBlue: #00454e;
@@ -730,12 +731,12 @@ h3 {
   justify-content: center;
   width: fit-content;
   border-radius: 100vh;
-  background-color: var(--clr-orange);
+  background-color: var(--clr-orange2);
   margin: auto;
   margin-bottom: 90px;
   margin-top: 60px;
   padding: 0px 8px;
-  border: solid 2px var(--clr-orange);
+  border: solid 2px var(--clr-orange2);
   font-weight: 600;
   font-size: 1rem;
   transition: 350ms;
@@ -748,7 +749,7 @@ h3 {
 
 .contact-button:hover>a,
 .contact-button:active>a {
-  color: var(--clr-orange);
+  color: var(--clr-orange2);
 }
 
 
@@ -1125,8 +1126,8 @@ h3 {
   align-self: flex-start;
   width: 110px;
   border-radius: 100vh;
-  background-color: var(--clr-orange);
-  border: 2px solid var(--clr-orange);
+  background-color: var(--clr-orange2);
+  border: 2px solid var(--clr-orange2);
   margin: 10px 20px 30px 0px;
   cursor: pointer;
   transition: 350ms;
@@ -1135,7 +1136,7 @@ h3 {
 
 #contact-form-button:hover {
   background-color: var(--clr-white);
-  color: var(--clr-orange);
+  color: var(--clr-orange2);
 }
 
 input[type="checkbox"] {

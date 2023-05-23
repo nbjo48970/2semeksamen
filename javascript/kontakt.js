@@ -7,23 +7,23 @@ function ContactForm(input)
   let emailInput = document.getElementById("email-input");
 
 if (inArray(input.value)) {
-  emailError.innerHTML = "Du har en tidligere henvendelse under behandling";
+  emailError.innerHTML = "Du har en tidligere henvendelse<br> under behandling";
   emailError.style.color = "rgb(80, 65, 57)";
   return false;
 }
   if (input.value.match(validRegex)){
     emailError.innerHTML = "Tak for din henvendelse!";
     emailError.style.color = "green";
-    emailInput.style.borderColor = "rgb(249, 247, 240)";
+    emailInput.style.borderColor = "rgb(41, 43, 51)";
     emailInput.value = '';
-    document.form1.email.focus();
+    document.contactform.email.focus();
     return false;
   }
     else {
     emailError.innerHTML = "Indtast gyldig e-mailadresse";
     emailError.style.color = "red";
     emailInput.style.borderColor = "red";
-    document.form1.email.focus();
+    document.contactform.email.focus();
     return false;
   }
 }
@@ -35,3 +35,5 @@ function inArray(inVal){
     }
     return false;
 }
+
+

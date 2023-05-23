@@ -51,13 +51,11 @@
     <div id="contact-form">
       <h2 id="contact-header">Kontakt</h2>
       <div class="input-row">
-        <form name="form1" action="#">
         <input type="text" id="name-input" name="navn" placeholder="Navn">
         <input type="text" id="virksomhed-input" name="virksomhed" placeholder="Virksomhed">
         <span id="email-error"></span><br>
         <input type="text" id="email-input" name="email" placeholder="E-mail">
         <input type="text" id="telefon-input" name="telefon" placeholder="Telefon">
-        </form>
       </div>
       <div class="input-row">
         <textarea id="" name="besked" placeholder="Besked"></textarea>
@@ -68,7 +66,8 @@
           <p>Jeg accepterer Conversias privatlivspolitik</p>
         </label>
       </div>
-      <button id="contact-form-button" type="submit" onclick="return ContactForm(document.form1.email)">Send</button>
+      <button id="contact-form-button" type="submit"
+        onclick="return ContactForm(document.contactform.email)">Send</button>
       <div class="contactInfo-container">
         <div class="contactInfo">
           <img class="contactIcon" src="img/footer-img/phone.png" alt="Telefon Ikon">
@@ -80,8 +79,8 @@
         </div>
       </div>
     </div>
-
   </form>
+
   <footer>
     <div class="main-flex-container-footsies">
       <div class="flex-container-top">
@@ -110,13 +109,14 @@
           <a href="rekruttering.html">Rekruttering</a>
           <a href="HR.html">HR</a>
           <a href="omos.html">Om os</a>
-          <a href="kontakt.html">Kontakt</a>
+          <a class="active-page-footer" href="kontakt.html">Kontakt</a>
         </div>
         <div class="socials-footlocker">
           <ul class="socials">
-            <li class="user"><a href="https://www.linkedin.com/in/henrikgrove-passionformennesker/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="user"><a href="https://www.linkedin.com/in/henrikgrove-passionformennesker/"><i
+                  class="fa-brands fa-linkedin-in"></i></a></li>
             <li class="user"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-        </ul>
+          </ul>
         </div>
         <div class="copyright">
           copyright © 2023 • Hold 12
@@ -125,7 +125,7 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
   </footer>
 </body>
 

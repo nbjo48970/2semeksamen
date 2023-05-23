@@ -795,7 +795,7 @@ h3 {
 }
 
 .quote-p {
-  background-color: #435A70;
+  background-color: var(--clr-darkBlueLight);
   padding: 20px 0px;
 }
 
@@ -816,7 +816,7 @@ h3 {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-style: italic;
   transition: 500ms;
   margin: 0px 1rem;
@@ -1298,7 +1298,7 @@ input[type="checkbox"]:checked::before {
 
 @media screen and (max-width: 354px) {
   .quote-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .contact-button {

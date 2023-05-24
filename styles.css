@@ -560,7 +560,7 @@ body {
 
 
 
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 531px) {
   .mobile {
     display: none;
   }
@@ -627,6 +627,12 @@ body {
 @media screen and (max-width: 430px) {
   .frontpage, .mask {
     width: 120%;
+  }
+}
+
+@media screen and (max-height: 800px) and (max-width: 530px ) {
+    .hero-pic-container {
+      height: 43vh;
   }
 }
 
@@ -1347,7 +1353,7 @@ input[type="checkbox"]::before {
   width: 12px;
   height: 12px;
   transform: scale(0);
-  box-shadow: inset 16px 16px var(--clr-red);
+  box-shadow: inset 16px 16px var(--clr-darkBlueLight);
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 

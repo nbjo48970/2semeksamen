@@ -938,11 +938,18 @@ h3 {
   margin: 0px 1rem;
 }
 
+.quote-text-sig {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 40% 0 0;
+  white-space: nowrap;
+}
+
 .qmark-right {
   display: flex;
   justify-content: right;
   font-size: 6.25rem;
-  height: 60px;
+  height: 10px;
   margin-right: 25%;
   margin-top: 1rem;
 }
@@ -1476,6 +1483,10 @@ input[type="checkbox"]:checked::before {
 
   .quote-text {
     font-size: 1.25rem;
+  }
+
+  .quote-text-sig {
+    margin: 0 35% 0 0;
   }
 }
 

@@ -6,9 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="mobile-nav.js" defer></script>
+    <script src="javascript/slideshow.js" defer></script>
     <title>Human Resources</title>
   </head>
   <body>
@@ -93,87 +95,46 @@
       </div>
     </section>
 
-    <!-- <section class="inspiration">
-
-      <br>
-          <div class="container" id="inspi">
-            <div>
-              <img src="img/iconRekruttering.png" alt="">
-              <p>REKRUTTERING</p>
-              <p>Vi hjælper dig til at skabe et stærkt
-                hold på baggrund af vores innovative
-                rekrutteringsprincipper</p>
-            </div>
-            <div>
-              <img src="img/iconPreboarding.png" alt="">
-              <p>PREBOARDING</p>
-              <p>Skab et smugkig bag kulissen,
-                og giv et værdifuldt førstehåndsindtryk
-                af din virksomhed</p>
-            </div>
-            <div>
-              <img src="img/iconOnboarding.png" alt="">
-              <p>ONBOARDING</p>
-              <p>Et skræddersyet onboarding forløb
-                hjælper jer til at tage trygt og effektivt imod
-                jeres nye medarbejdere</p>
-            </div>
-          </div>
-          <div class="container" id="inspi2">
-            <div>
-              <img src="img/iconKompetence.png" alt="">
-              <p>KOMPETENCEVURDERING</p>
-              <p>Spar tid og lad os foretage
-                dybdegående kompetencevurderinger
-                af dine kommende medarbejdere</p>
-            </div>
-            <div>
-              <img src="img/iconPersonale.png" alt="">
-              <p>PERSONALEHÅNDTERING</p>
-              <p>Professionel rådgivning til
-                håndtering og strukturering af effektiv
-                personaleadministration</p>
-            </div>
-            <div>
-              <img src="img/iconArbejdsmiljo.png" alt="">
-              <p>ARBEJDSMILJØ</p>
-              <p>Stryk sammenhængskraften i din
-                virksomhed med øget fokus på trivsel
-                og engagementV</p>
-            </div>
-          </div>
-    </section> -->
-
     <div class="contact-button">
       <a href="kontakt.html">
         <p>Kontakt os</p>
       </a>
     </div>
 
-    <div class="quote">
-      <div class="quote-p">
-        <p class="qmark-left">"</p>
-        <p class="quote-text">Vi har ansat nogle af vores bedste medarbejdere via Conversia. <br> Det gør altså noget, at det ikke bare er den faglige ekspertise, <br>
-          der er på plads, men også at kandidaten som person <br> passer ind i virksomhedens værdisæt.</p>
-        <p class="qmark-right">"</p>
+    <div class="slideshow-container">
+      <div class="quote quoteSlides">
+        <div class="quote-p">
+          <p class="qmark-left">"</p>
+          <p class="quote-text fade">Vi har ansat nogle af vores bedste medarbejdere via Conversia. <br> Det gør altså noget, at det ikke bare er den faglige ekspertise, <br>
+            der er på plads, men også at kandidaten som person <br> passer ind i virksomhedens værdisæt.</p>
+          <p class="qmark-right">"</p>
+        </div>
+      </div>
+      <div class="quote quoteSlides">
+        <div class="quote-p">
+          <p class="qmark-left">"</p>
+          <p class="quote-text fade">Som en mindre virksomhed på Fyn, har vi haft haft svært ved <br>at finde de rette medarbejdere og håndtere rekruttering og HR-opgaver. <br>Conversia har været en fantastisk partner, der giver os omfattende <br>support til preboarding, onboarding, personalehåndbøger og mere.</p>
+          <p class="qmark-right">"</p>
+        </div>
+      </div>
+      <div class="quote quoteSlides">
+        <div class="quote-p">
+          <p class="qmark-left">"</p>
+          <p class="quote-text fade">Conversia har virkelig forvandlet vores virksomhed. <br>De har hjulpet os med at finde de rette medarbejdere og navigere <br>gennem HR-processerne. Med deres skræddersyede tilgang til rekruttering, <br>preboarding og HR-opgaver har de gjort en stor forskel for os.</p>
+          <p class="qmark-right">"</p>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
 
-    <div class="quote">
-      <div class="quote-p">
-        <p class="qmark-left">"</p>
-        <p class="quote-text">Som en mindre virksomhed på Fyn, har vi haft haft svært ved <br>at finde de rette medarbejdere og håndtere rekruttering og HR-opgaver. <br>Conversia har været en fantastisk partner, der giver os omfattende <br>support til preboarding, onboarding, personalehåndbøger og mere.</p>
-        <p class="qmark-right">"</p>
-      </div>
-    </div>
-
-    <div class="quote">
-      <div class="quote-p">
-        <p class="qmark-left">"</p>
-        <p class="quote-text">Conversia har virkelig forvandlet vores virksomhed. <br>De har hjulpet os med at finde de rette medarbejdere og navigere <br>gennem HR-processerne. Med deres skræddersyede tilgang til rekruttering, <br>preboarding og HR-opgaver har de gjort en stor forskel for os.</p>
-        <p class="qmark-right">"</p>
-      </div>
-    </div>
 
     <footer>
       <div class="main-flex-container-footsies">

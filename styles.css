@@ -1215,7 +1215,7 @@ h3 {
 .lang-overlay {
   width: 0vw;
   height: 100vh;
-  background-color: var(--clr-blue);
+  background-color: var(--clr-darkBlueLight);
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -1224,11 +1224,22 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--clr-white);
   flex-direction: column;
 }
 
+.lang-overlay h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .lang-list {
-  color: var(--clr-white);
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  border: 1px solid var(--clr-white);
+  padding: 50px;
 }
 
 .close-button {

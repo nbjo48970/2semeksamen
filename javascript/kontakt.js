@@ -29,6 +29,7 @@ if  (navnInput.value=="" || virksomhedInput.value=="" || telefonInput.value=="")
     navnInput.value = '';
     virksomhedInput.value = '';
     telefonInput.value = '';
+    formInput.value = '';
     document.contactform.email.focus();
     return false;
   }
@@ -51,13 +52,13 @@ function inArray(inVal){
 }
 
 
-
+let formInput = document.getElementById("besked-input");
 
 
 function watchIt(textaera) {
 
   // let chatError = document.getElementById("chat-error");
-  let formInput = document.getElementById("besked-input");
+
 
 
 if (inArray2(document.getElementById("besked-input").value)) {

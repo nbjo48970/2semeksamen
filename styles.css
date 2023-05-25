@@ -1317,17 +1317,36 @@ h3 {
   text-align: center;
 }
 
-#email-error {
+.error {
   position: absolute;
   font-size: 0.7rem;
-  top: 244px;
   left: 0;
+  margin-left: 0rem
+}
+
+#name-error {
+  top: 65px;
+}
+
+#virksomhed-error {
+  top: 146px;
+}
+
+#email-error {
+  top: 225px;
+}
+
+#telefon-error {
+  top: 305px;
+}
+
+#besked-error {
+  top: 148px;
 }
 
 @media screen and (min-width: 696px) {
-  #email-error {
-    top: 146px;
-    left: 20px;
+  .error {
+    margin-left: 2rem;
   }
 }
 

@@ -1212,6 +1212,37 @@ h3 {
   transform: rotate(180deg);
 }
 
+.lang-overlay {
+  width: 0vw;
+  height: 100vh;
+  background-color: var(--clr-blue);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lang-list {
+  color: var(--clr-white);
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 3rem;
+  color: var(--clr-white);
+  font-family: "canada-type-gibson", sans-serif;
+  font-weight: 100;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
 .footlocker-nav a.active-page-footer {
   opacity: 0.9;
 }

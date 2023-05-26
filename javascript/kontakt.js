@@ -1,7 +1,6 @@
 let formInput = document.getElementById("besked-input");
 function ContactForm(input)
 {
-
   let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   let emailError = document.getElementById("email-error");
   let emailInput = document.getElementById("email-input");
@@ -12,32 +11,45 @@ function ContactForm(input)
   let nameError = document.getElementById("name-error");
   let virksomhedError = document.getElementById("virksomhed-error");
   let telefonError = document.getElementById("telefon-error");
-
-
-
+  let inputError = false;
 
 if (inArray(input.value)) {
   emailError.innerHTML = "Du har en tidligere henvendelse<br> under behandling";
   emailError.style.color = "red";
   emailInput.style.borderColor = "red";
-  return false;
+  inputError = true;
 }
 
-if  (navnInput.value=="" || virksomhedInput.value=="" || telefonInput.value==""){
-    return false;
+if (navnInput.value==""){
+  nameError.innerHTML = "Feltet må ikke være tomt";
+  nameError.style.color = "red";
+  navnInput.style.borderColor = "red";
+  inputError = true;
+} else {
+  nameError.innerHTML = "";
+  navnInput.style.borderColor = "rgb(35, 82, 88)";
 }
-// if (navnInput.value==""){
-//   nameError.innerHTML = "Feltet må ikke være tomt";
-//   nameError.style.color = "red";
-//   nameInput.style.borderColor = "red";
-//   document.contactform.navn.focus();
-// }
-//   else {
-//     // nameError.innerHTML = "";
-//   return true;
-// }
 
-//Alt under a goodiebags
+if (virksomhedInput.value==""){
+  virksomhedError.innerHTML = "Feltet må ikke være tomt";
+  virksomhedError.style.color = "red";
+  virksomhedInput.style.borderColor = "red";
+  inputError = true;
+} else {
+  virksomhedError.innerHTML = "";
+  virksomhedInput.style.borderColor = "rgb(35, 82, 88)";
+}
+
+if (telefonInput.value==""){
+  telefonError.innerHTML = "Feltet må ikke være tomt";
+  telefonError.style.color = "red";
+  telefonInput.style.borderColor = "red";
+  inputError = true;
+} else {
+  telefonError.innerHTML = "";
+  telefonInput.style.borderColor = "rgb(35, 82, 88)";
+}
+
   if (input.value.match(validRegex)){
     emailError.innerHTML = "";
     emailInput.style.borderColor = "rgb(35, 82, 88)";
@@ -47,11 +59,22 @@ if  (navnInput.value=="" || virksomhedInput.value=="" || telefonInput.value=="")
     emailError.style.color = "red";
     emailInput.style.borderColor = "red";
     document.contactform.email.focus();
-    return false;
+    inputError = true;
   }
-  //sæt funktion her efter test Xander
   if (watchIt()) {
     //alt er okay
+
+  } else {
+    //alt er ikke okay ;( skriv en fejlmeddelse og stop med at submitte
+    beskedError.innerHTML = "Din besked indeholder sensitivt sprog";
+    beskedError.style.color = "red";
+    formInput.style.borderColor = "red";
+    inputError = true;
+  }
+  if (inputError){
+    return false;
+  }
+  else {
     beskedError.innerHTML = "Tak for din henvendelse!";
     beskedError.style.color = "green";
     emailInput.value = '';
@@ -62,24 +85,17 @@ if  (navnInput.value=="" || virksomhedInput.value=="" || telefonInput.value=="")
     formInput.style.borderColor = "rgb(35, 82, 88)";
     document.contactform.email.focus();
     return false;
-  } else {
-    //alt er ikke okay ;( skriv en fejlmeddelse og stop med at submitte
-    beskedError.innerHTML = "Din besked indeholder sensitivt sprog";
-    beskedError.style.color = "red";
-    formInput.style.borderColor = "red";
-    return false;
   }
 }
 
 let regUsers = ["pede@gmail.com", "thomas@mail.dk", "nicoline@mail.com"];
 function inArray(inVal){
-    for( var i=0, len=regUsers.length; i < len; i++){
+    for( let i=0, len=regUsers.length; i < len; i++){
         if (regUsers[i] == inVal) return true;
     }
     return false;
 }
-
-
+//tjekker om den nuværende position i arrayet I=position i aaray true = stopper eksekvering af loop, og returnerer til ksldt funktion
 function watchIt() {
 if (inArray2(formInput.value)) {
   return false;

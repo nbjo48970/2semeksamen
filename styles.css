@@ -13,6 +13,7 @@
   --clr-darkBlue: #00454e;
   --clr-darkBlueLight: #235258;
   --clr-black: #292b33;
+  --clr-footer: #383838;
   --clr-white: #f6f6f6;
   --clr-red: #A8321D;
   --clr-grey: #999999;
@@ -892,7 +893,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   /* margin-top: 5rem; */
-  background-color: #383838;
+  background-color: var(--clr-footer);
   text-decoration: none;
   color: #E5E5E5;
   gap: 1rem;
@@ -1213,39 +1214,51 @@ h3 {
 }
 
 .lang-overlay {
-  width: 0vw;
-  height: 100vh;
-  background-color: var(--clr-darkBlueLight);
   position: fixed;
-  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-footer);
+  z-index: 333;
   top: 0;
-  left: 0;
+  left: 100%;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--clr-white);
   flex-direction: column;
+  transition: 500ms;
 }
 
 .lang-overlay h1 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  transition: 500ms;
+}
+
+.lang-overlay h2 {
+  font-size: 0.8rem;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .lang-list {
   display: flex;
-  flex-direction: row;
-  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  max-width: 189px;
   border: 1px solid var(--clr-white);
-  padding: 50px;
+  padding: 20px;
+  white-space: nowrap;
 }
 
 .close-button {
   position: absolute;
-  top: 15px;
-  right: 25px;
+  bottom: 0px;
+  right: 32px;
   font-size: 3rem;
   color: var(--clr-white);
   font-family: "canada-type-gibson", sans-serif;
@@ -1253,6 +1266,51 @@ h3 {
   padding: 0 10px;
   cursor: pointer;
 }
+
+#lang-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#lang-options a {
+  width: 142px;
+  text-align: center;
+  transition: 350ms;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1.2rem;
+  text-decoration: none;
+  color: var(--clr-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#lang-options a:hover {
+  color: var(--clr-blue);
+}
+
+#lang-options a span {
+  font-size: 0.7rem;
+}
+
+.line {
+  display: block;
+  width: 60%;
+  height: 1px;
+  background-color: var(--clr-white);
+  margin: 8px 0;
+  opacity: 0.3;
+  transition: 500ms;
+}
+
+#lang-options a:hover .line {
+  background-color: var(--clr-blue);
+}
+
 
 .footlocker-nav a.active-page-footer {
   opacity: 0.9;
@@ -1413,6 +1471,11 @@ h3 {
   #besked-error {
     top: 145px;
     left: -10px;
+  }
+
+  .lang-list {
+    padding: 50px;
+    max-width: 496px;
   }
 }
 
@@ -1607,6 +1670,14 @@ input[type="checkbox"]:checked::before {
 
   .contact-button {
     font-size: 0.8rem;
+  }
+
+  .lang-overlay h1 {
+    font-size: 1.05rem;
+  }
+
+  .lang-overlay h2 {
+    font-size: 0.7rem;
   }
 }
 

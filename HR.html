@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="mobile-nav.js" defer></script>
     <script src="javascript/slideshow.js" defer></script>
+    <script src="javascript/language.js" defer></script>
     <title>Human Resources</title>
   </head>
   <body>
@@ -177,12 +178,23 @@
           </div>
           <div class="copyright">
             copyright © 2023 • Hold 12
-            <div class="language-switch">
+            <div class="language-switch" onclick="navToggle()">
               <i class="fa-solid fa-earth-americas"></i>
             </div>
           </div>
         </div>
+      </div>
+      <div id="lang-bar" class="lang-overlay">
+          <p class="close-button" onclick="navToggle()">×</p>
+          <h1>VÆLG SPROG</h1>
+          <h2>Select Language</h2>
+          <div>
+          <ul class="lang-list">
+            <li id="lang-options">
+            </li>
+          </ul>
         </div>
+      </div>
     </footer>
 
 

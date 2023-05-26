@@ -1265,6 +1265,11 @@ h3 {
   font-weight: 100;
   padding: 0 10px;
   cursor: pointer;
+  transition: 500ms;
+}
+
+.close-button:hover {
+  transform: scale(0.85)
 }
 
 #lang-options {
@@ -1280,7 +1285,7 @@ h3 {
   transition: 350ms;
   font-size: 1rem;
   cursor: pointer;
-  margin: 1.2rem;
+  margin: 0.6rem;
   text-decoration: none;
   color: var(--clr-white);
   display: flex;
@@ -1476,6 +1481,10 @@ h3 {
   .lang-list {
     padding: 50px;
     max-width: 496px;
+  }
+
+  #lang-options a {
+    margin: 1.2rem;
   }
 }
 

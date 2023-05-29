@@ -930,6 +930,12 @@ h3 {
   to {opacity: 1}
 }
 
+@media screen and (max-width: 354px) {
+  .qmark-right {
+    margin-right: 20%;
+  }
+}
+
 
 /* ------------------ Footer -------------------- */
 

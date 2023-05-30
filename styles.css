@@ -254,7 +254,13 @@ body {
 }
 
 .hero-pic-container {
-  height: 75vh;
+  height: auto;
+}
+
+@media screen and (min-height: 769px) {
+  .hero-pic-container {
+    height: 75vh;
+  }
 }
 
 .frontpage,
